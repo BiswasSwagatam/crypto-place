@@ -6,11 +6,11 @@ import './index.css'
 import CoinContextProvider from './context/CoinContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  // <StrictMode>
     <BrowserRouter>
       <CoinContextProvider>
         <App />
       </CoinContextProvider>
     </BrowserRouter>
-  </StrictMode>,
+  // </StrictMode>,
 )
