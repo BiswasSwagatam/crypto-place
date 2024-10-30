@@ -46,7 +46,7 @@ const Coin = () => {
               <img  src={coinData?.image.large} className='w-24 mt-10'/> }
             <p className='text-4xl font-bold'>{coinData.name} ({coinData.symbol})</p>
             <div className='w-3/4'>
-              <gecko-coin-price-chart-widget dark-mode="true" transparent-background="true" locale="en" outlined="true" initial-currency={curr}></gecko-coin-price-chart-widget>
+              <gecko-coin-price-chart-widget coin-id={coinData.name} dark-mode="true" transparent-background="true" locale="en" outlined="true" initial-currency={curr}></gecko-coin-price-chart-widget>
             </div>  
             <div className='flex flex-col gap-5 w-3/4
             bg-gray-800/50 shadow-md p-5 rounded-xl
